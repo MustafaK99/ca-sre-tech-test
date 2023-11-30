@@ -33,6 +33,7 @@ deployment = kplus.Deployment(
     replicas=5 #Additional task have 5 replicas not default 2
 )
 
+#Additional task 3
 liveness_probe = kplus.Probe.from_http_get(
     path="/",
     port=80,
